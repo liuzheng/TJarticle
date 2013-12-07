@@ -1,0 +1,258 @@
+%%% !Mode\dots "XeLaTeX:UTF-8"
+\documentclass[a4paper,12pt]{article}
+\input{setup/package}
+% 页眉设置
+\geometry{left=2.5cm,right=2.5cm,bottom=2.5cm,top=3cm}
+
+\begin{document}
+\input{setup/format}
+%\cnarticle			% 中文论文环境，默认是英文的
+%\renewcommand{\thefigure}{\arabic{section}-\arabic{figure}}       % 使图编号为 7-1 的格式 
+%\renewcommand{\thesubfigure}{\alph{subfigure})}                   % 使子图编号为 a) 的格式
+%\renewcommand{\thesubtable}{(\alph{subtable})}                    % 使子表编号为 (a) 的格式
+%\renewcommand{\thetable}{\arabic{section}-\arabic{table}}         % 使表编号为 7-1 的格式
+%\renewcommand{\theequation}{\arabic{section}-\arabic{equation}}   % 使公式编号为 7-1 的格式
+\yemeiclean  % 清理页眉，注释掉会显示页眉
+
+\begin{center}
+\sihao    城南旧事
+\wuhao
+
+林海音
+
+linghaiyin@tongji.edu.cn
+
+\end{center}
+\begin{multicols}{2}
+
+
+\section*{\hfill 摘要 \hfill}
+太阳从大玻璃窗透进来\cite{CK1}这里用的是$\backslash$ cite\{xx\},是latex默认的，照到大白纸糊的墙上\cankao{CK2}，这里是用的我重写的$\backslash$ cankao\{xxx\}，自己看区别吧。照到三屉桌上，照到我的小床上来了。我醒了，还躺在床上，看那道太阳光里飞舞着的许多小小的，小小的尘埃。宋妈过来掸窗台，掸桌子，随着鸡毛掸子的舞动，那道阳光里的尘埃加多了，飞舞得更热闹了，我赶忙拉起被来蒙住脸，是怕尘埃把我呛得咳嗽。
+
+宋妈的鸡毛掸子轮到来掸我的小床了，小床上的棱棱角角她都掸到了，掸子把儿碰在床栏上，格格地响，我想骂她，但她倒先说话了：
+
+
+\section{Introduction}
+
+“还没睡够哪！”说着，她把我的被大掀开来，我穿着绒褂裤的身体整个露在被外，立刻就打了两个喷嚏。她强迫我起来，给我穿衣服。印花斜纹布的棉袄棉裤，都是新做的，棉裤筒多可笑，可以直立放在那里，就知道那棉花够多厚了。
+
+妈正坐在炉子边梳头，倾着身子，一大把头发从后脖子顺过来，她就用篦子篦呀篦呀的，炉上是一瓶玫瑰色的发油，天气冷，油凝住了，总要放在炉子上化一化才能擦。
+
+
+\begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin},label=lstlisting,caption=多栏]
+\begin{multicols}{2}
+xxxxxx
+\end{multicols}
+\end{lstlisting}
+
+\end{multicols}
+\section{公式？！}
+\$ Equation \$ = $ Equationg $
+
+\href{http://www.sciweavers.org/free-online-latex-equation-editor}{手点}
+
+
+\href{http://webdemo.visionobjects.com/home.html;jsessionid=1mk45ecrnd2zk1l5x938b6sd4y?locale=zh_CN#equation}{手写}
+
+\input{body/equation}
+
+
+
+\section{图表}
+\subsection{插图}
+
+\begin{figure}[H]
+\includegraphics[width=8cm]{figure1.jpg}
+\caption{Shubert Function}
+\end{figure}
+
+\begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin},label=Gamma,caption=Gamma]
+\begin{figure}[H]
+\includegraphics[width=8cm]{figure1.jpg}
+\caption{Shubert Function}
+\end{figure}
+\end{lstlisting}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{figure1.jpg}
+\caption{Shubert Function}
+\end{figure}
+
+\begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin},label=Gamma,caption=Gamma]
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{figure1.jpg}
+\caption{Shubert Function}
+\end{figure}
+\end{lstlisting}
+\begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin},label=Gamma,caption=Gamma]
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=8cm]{figure1.jpg}
+	\caption{Shubert Function}
+	\end{center}
+\end{figure}
+\end{lstlisting}
+
+
+\begin{figure}[H]
+\centering
+\subfigure[恩恩]{
+\includegraphics[width=4cm]{figure1.jpg}
+\includegraphics[width=4cm]{figure21.jpg}
+}
+\subfigure[呵呵]{
+\includegraphics[width=4cm]{figure1.jpg}
+\includegraphics[width=4cm]{figure1.jpg}
+}
+\caption{The trace of NO.2 player , NO.5 player and ball from cycle 238 to cycle 258}
+\end{figure}
+
+\begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin},label=Gamma,caption=Gamma]
+\begin{figure}[H]
+\centering
+\subfigure[ 恩恩]{
+\includegraphics[width=4cm]{figure1.jpg}
+\includegraphics[width=4cm]{figure21.jpg}
+}
+\subfigure[ 呵呵]{
+\includegraphics[width=4cm]{figure1.jpg}
+\includegraphics[width=4cm]{figure1.jpg}
+}
+\caption{The trace of NO.2 player , NO.5 player and ball from cycle 238 to cycle 258}
+\end{figure}
+\end{lstlisting}
+
+\begin{figure}[H]
+\centering
+\subfigure[the first subfigure]{
+\begin{minipage}[b]{0.2\textwidth}
+\includegraphics[width=1\textwidth]{figure1} \\
+\includegraphics[width=1\textwidth]{figure21}
+\end{minipage}
+}
+\subfigure[the second subfigure]{
+\begin{minipage}[b]{0.2\textwidth}
+\includegraphics[width=1\textwidth]{figure1} \\
+\includegraphics[width=1\textwidth]{figure1}
+\end{minipage}
+}
+\end{figure}
+
+
+\begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin},label=Gamma,caption=Gamma]
+\begin{figure}[H]
+\centering
+\subfigure[the first subfigure]{
+\begin{minipage}[b]{0.2\textwidth}
+\includegraphics[width=1\textwidth]{figure1} \\
+\includegraphics[width=1\textwidth]{figure21}
+\end{minipage}
+}
+\subfigure[the second subfigure]{
+\begin{minipage}[b]{0.2\textwidth}
+\includegraphics[width=1\textwidth]{figure1} \\
+\includegraphics[width=1\textwidth]{figure1}
+\end{minipage}
+}
+\end{figure}
+\end{lstlisting}
+
+
+\subsection{画表}
+
+
+\begin{table}[H]
+\centering
+\caption{Comparison of algorithm efficiency between AINGA and SIGA}
+\begin{tabular}{c|c|c}
+\hline
+Algorithm & Average steps & Success rate /\%\\\hline
+AINGA & 92 & 100\\\hline
+SIGA & 213 & 60\\\hline
+\end{tabular}
+\end{table}
+
+
+\begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin},label=Gamma,caption=Gamma]
+\begin{table}[H]
+\centering
+\caption{Comparison of algorithm efficiency between AINGA and SIGA}
+\begin{tabular}{c|c|c}
+\hline
+Algorithm & Average steps & Success rate /\%\\\hline
+AINGA & 92 & 100\\\hline
+SIGA & 213 & 60\\\hline
+\end{tabular}
+\end{table}
+\end{lstlisting}
+
+
+
+\begin{table}[H]
+\centering
+\caption{Comparison of tackle success rate between the team based on AINGA and the team based on SGA.}
+\begin{tabular}{c|c|c|c|c}
+\hline
+Team & \tabincell{c}{50\\matches} & \tabincell{c}{100\\matches} & \tabincell{c}{200\\matches} & \tabincell{c}{Success \\rate/\%}  \\ \hline
+AINGA & 89\% & 91\% & 90\% & 90\% \\\hline
+Q-Learning & 84\% & 86\% & 83\% & 84.3\% \\\hline
+\end{tabular}
+\end{table}
+
+\begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin},label=Gamma,caption=Gamma]
+\begin{table}[H]
+\centering
+\caption{Comparison of tackle success rate between the team based on AINGA and the team based on SGA.}
+\begin{tabular}{c|c|c|c|c}
+\hline
+Team & \tabincell{c}{50\\matches} & \tabincell{c}{100\\matches} & \tabincell{c}{200\\matches} & \tabincell{c}{Success \\rate/\%}  \\ \hline
+AINGA & 89\% & 91\% & 90\% & 90\% \\\hline
+Q-Learning & 84\% & 86\% & 83\% & 84.3\% \\\hline
+\end{tabular}
+\end{table}
+\end{lstlisting}
+
+\section{参考文献}
+\begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin},label=Gamma,caption=Gamma]
+@article{name1,
+author = {作者, 多个作者用 and 连接},
+title = {标题},
+journal = {期刊名},
+volume = {卷20},
+number = {页码},
+year = {年份},
+abstract = {摘要, 这个主要是引用的时候自己参考的, 这一行不是必须的}
+}
+
+@book{name2,
+author ="作者",
+year="年份2008",
+title="书名",
+publisher ="出版社名称"
+}
+\end{lstlisting}
+
+最简单的使用方法
+
+
+\begin{lstlisting}[language=TeX,numbers=none,frame=lrtb,keywords={begin},label=Gamma,caption=Gamma]
+\bibitem{CK1}Shing-jun Ren and Hai-de Huang (2001). “A Robot Path
+Planning Algorithm Based On Grid Expansion.” Journal of
+Harbin Institute of Technology. Vol.9,No. 11, pp. 68-72.
+\end{lstlisting}
+
+\begin{thebibliography}{11}
+\bibitem{CK1}Shing-jun Ren and Hai-de Huang (2001). “A Robot Path
+Planning Algorithm Based On Grid Expansion.” Journal of
+Harbin Institute of Technology. Vol.9,No. 11, pp. 68-72.
+\bibitem{CK2} Hong-yan Shi, Chang-zhi Sun et al. (2006). “Chaotic
+Potential Field Method and Application in RobotSoccer
+Game.” Proceedings of the 6th World Congress on
+Intelligent Control andAutomation, Dalian, China, June
+2006.
+
+\end{thebibliography}
+\end{document}
+
