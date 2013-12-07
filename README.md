@@ -1,4 +1,4 @@
-TJarticle
+﻿TJarticle
 =========
 
-�򵥵�д��һ��article��ģ��
+简单的写了一个article的模板
